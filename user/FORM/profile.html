@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Register</title>
+	<link rel="stylesheet" type="text/css" href="register-style.css">
+</head>
+<body>
+	<div class="login-box">
+    <img src="register.jpg" class="avatar">
+        <h1>Register </h1>
+            <form method="post" action="">
+                <p>Your Full name</p>
+                <input type="text" name="full-name"
+                placeholder="Enter your first name and last name" required>
+
+                <p>Username</p>
+                <input type="text" name="username" placeholder="Enter Username" required>
+            
+                <p>Password</p>
+                <input type="password" name="password" placeholder="Enter Password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" title="Please include at least 1 uppercase character, 1 lowercase character, and 1 number." required>
+                <input type="password" name="password" placeholder="Enter Password" required>
+                <p>Email</p>
+                <input type="text" name="phone-number" placeholder="Enter your email" required>
+                <lable><input type="radio" value="1" name="gender">male</lable>
+                <lable><input type="radio" value="0" name="gender">female</lable><br>
+                <input type="submit" name="submit" value="Register">
+            </form>
+        </div>
+    
+</body>
+</html>

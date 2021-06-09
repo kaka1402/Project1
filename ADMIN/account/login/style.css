@@ -1,0 +1,182 @@
+body{
+  margin: 0;
+  padding: 0;
+  background:#141823;
+  background-size: contain;
+  background-position: center;
+  font-family: sans-serif;
+}
+.login-box{
+  width: 320px;
+  height: 420px;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  box-sizing: border-box;
+  padding: 70px 30px;
+  border-radius: 15px;
+}
+.avatar{
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  position: absolute;
+  top: -40px;
+  left: calc(50% - 42.5px);
+
+}
+h1{
+  margin: 0;
+  padding: 0 0 20px;
+  text-align: center;
+  font-size: 22px;
+}
+.login-box p{
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+}
+.login-box input{
+  width: 100%;
+  margin-bottom: 20px;
+}
+.login-box input[type="text"], input[type="password"]
+{
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  outline: none;
+  height: 40px;
+  color: #fff;
+  font-size: 16px;
+}
+.login-box input[type="submit"]
+{
+  border: none;
+  outline: none;
+  height: 40px;
+  background: #1c8adb;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 20px;
+}
+.login-box input[type="submit"]:hover
+{
+  cursor: pointer;
+  background: #39dc79;
+  color: #000;
+}
+.toggle {
+  padding: 0 0 30px;
+  display: inline-block;
+  height: 17px;
+  position: relative;
+  width: 100px;
+}
+.toggle input[type="checkbox"] {
+  display: none;
+}
+.toggle .slider {
+  float: left;
+  background-color: #ccc;
+  cursor: pointer;
+  width: 30px;
+  height: 100%;
+  transition: .4s;
+  position: relative;
+  border-radius: 25px;
+}
+.toggle .slider:before {
+  background-color: #fff;
+  bottom: 2px;
+  content: "";
+  height: 13px;
+  left: 2px;
+  position: absolute;
+  transition: .4s;
+  width: 13px;
+  border-radius: 25px;
+}
+.toggle input[type="checkbox"]:checked + .slider {
+ background-color: #07a787;
+}
+.toggle input[type="checkbox"]:checked + .slider:before {
+ transform: translateX(13px);
+}
+.login-box a{
+  text-decoration: none;
+  font-size: 14px;
+  color: #fff;
+}
+.login-box a:hover
+{
+  color: #39dc79;
+}
+#save{
+  font-size: 10px;
+  padding: 0 0 7px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,280 @@
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	background: #E1E0E0;
+	color: #909090;
+	margin: 0;
+}
+
+.navbar {
+	display: flex;
+	flex-direction: row;
+	background: #fff;
+	color: #909090;
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 101;
+	box-shadow: rgba(0,0,0,0.12) 0px 1px 4px 1px;
+}
+
+.navbar-nav {
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	padding-left: 0;
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
+.nav-link {
+	float: left;
+	text-align: center;
+	padding: 21px 10px;
+	text-decoration: none;
+	font-size: 17px;
+	color: #f5f6fa;
+	position: relative;
+}
+
+.nav-link:hover {
+	cursor: pointer;
+}
+
+.navbar-nav i {
+	font-size: 1.4rem;
+}
+
+.nav-right {
+	margin-left: auto;
+}
+
+
+.fas.fa-bars:hover~.sidebar{
+	width: 250px;
+}
+
+.fas.fa-tachometer-alt{
+	top: 27px;
+}
+/* button */
+
+.logo {
+	height: 60px;
+	padding: 10px;
+}
+
+.avt img {
+	width: 39px;
+	height: 39px;
+	border-radius: 50%;
+}
+
+.avt {
+	padding: 11px
+}
+.sidebar-expand .sidebar {
+	width: 250px;
+}
+.sidebar-expand .wrapper {
+	margin-left: 250px;
+}
+.navbar-badge {
+	font-size: .6rem;
+	padding: 2px 4px;
+	font-weight: 300;
+	position: absolute;
+	right: 5px;
+	top: 9px;
+	color: #fff;
+	background: #909090;
+	border-radius: 5px;
+}
+
+.dropdown {
+	position: relative;
+}
+.dropdown:hover {
+	cursor: pointer;
+}
+.dropdown-menu {
+	list-style: none;
+	display: none;
+	flex-direction: column;
+	position: absolute;
+	right: 20%;
+	top: 90%;
+	background: #fff;
+	max-width: 300px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+	padding: unset;
+	border-radius: 10px;
+	border: 0.125px solid  #181818;
+}
+.dropdown-expand {
+	display: flex;
+}
+.dropdown-menu-item {
+	width: 100%;
+}
+
+.dropdown-menu-content {
+	max-height: 500px;
+	overflow-y: auto;
+}
+
+.dropdown-menu-link {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	text-decoration: none;
+	color: #909090;
+}
+
+.dropdown-menu-link div {
+	min-width: 82px;
+	height: 50px;
+	position: relative;
+}
+
+.dropdown-menu-link i {
+	font-size: 1.25rem;
+	color: #f5f6fa;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.dropdown-menu-link span {
+	font-size: 15px;
+	width: 100px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.overlay-scrollbar::-webkit-scrollbar {
+	width: 9px;
+	height: 9px;
+}
+
+.overlay-scrollbar::-webkit-scrollbar-thumb {
+	background-color: rgba(0,0,0,0.4);
+	border-radius: 10rem;
+	border: 1px solid #23242D;
+}
+
+
+
+
+.sidebar {
+	width: 50px;
+	height: 100vh;
+	position: fixed;
+	margin-top: 65px;
+	background: #fff;
+	box-shadow: rgba(0,0,0,0.12) 0px 1px 4px 1px;
+	overflow: hidden;
+	z-index: 100;
+	transition: width .5s;
+}
+
+.sidebar:hover {
+	width: 250px;
+}
+
+.sidebar-nav {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 100vh;
+}
+
+.sidebar-nav-item {
+	width: 100%;
+}
+
+.sidebar-nav-link {
+	display: flex;
+	align-items: center;
+	color: #909090;
+	text-decoration: none;
+}
+
+.sidebar-nav-link i {
+	font-size: 1.5rem;
+	color: #f5f6fa;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.sidebar-nav-link div {
+	min-width: 50px;
+	height: 50px;
+	position: relative;
+}
+
+.sidebar-nav-link:hover {
+	background: #181818;
+}
+/* chih */
+.sidebar-nav-link:active {
+	background: #181818;
+	color: #eb4d4b;
+}
+
+.sidebar-nav-link>div:active {
+	border-left: 5px solid #eb4d4b;
+}
+
+.sidebar-nav-link>i:active {
+	color:#eb4d4b;
+	margin-left: -5px;
+}
+/* chinh * */
+	
+.wrapper {
+	padding: 10px;
+	margin-left: 50px;
+	padding-top: 75px;
+	background: #E1E0E0;
+	transition: margin-left .5s;
+}
+
+/* Extra small devices <= 600px*/
+@media only screen and (max-width: 600px) {
+	.sidebar {
+		width: 0;
+	}
+	.wrapper {
+		margin-left: 0;
+	}
+	.nav-right .nav-item {
+		display: none;
+	}
+	.nav-right .avt-wrapper {
+		display: list-item;
+	}
+	.navbar-search {
+		display: none;
+	}
+	.dropdown-menu {
+		max-width: 300px;
+	}
+}
+
+
+
+
